@@ -41,9 +41,12 @@ const game = () => {
     if (result == "guess") {
       const score = 100 - i * 10;
       alert(
-        `Are you a wizard?\n${playerGuess} is the correct number!\nYour score is ${score}!\nYOU WIN!`
+        `Are you a wizard?\n${playerGuess} is the correct number!\nYou guess after ${
+          i + 1
+        } rounds!\nYour score is ${score}!\nYOU WIN!`
       );
       console.log(`The number is ${playerGuess}!`);
+      console.log(`You guess after ${i + 1} rounds!`);
       console.log(`Your score is ${score}!`);
       console.log("YOU WIN!");
       break;
