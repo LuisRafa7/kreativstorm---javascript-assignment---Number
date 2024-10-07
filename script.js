@@ -57,6 +57,12 @@ const game = () => {
       console.log("YOU LOSE!");
     }
   }
+  const confirmRestart = confirm("Do you want play again?");
+  if (confirmRestart) {
+    return game();
+  } else {
+    return null;
+  }
 };
 
 game();
